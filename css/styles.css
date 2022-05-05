@@ -1,9 +1,21 @@
 :root {
+    --main-font:'Roboto', sans-serif;
+    --second-font:'Raleway', sans-serif;
     --text-color: #757575;
     --titlt-color: #212121;
     --accent-color: #2196F3;
+    --second-accent-color:#188CE8;
     --logo-dark-color: #000000;
     --white-color: #FFFFFF;
+    --main-bg-color:#FFFFFF;
+    --second-bg-color:#2F303A;
+    --bg-color: #F5F4FA;
+    --border-color:#EEEEEE;
+    --border-header-color:#ECECEC;
+    --adress-color: rgba(255, 255, 255, 0.6);
+    --team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .list {
@@ -11,14 +23,15 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+   
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    background-color: var(--white-color);
+    background-color: var(--main-bg-color);
 }
 
 .container {
@@ -40,7 +53,7 @@ img {
 /* ***************** Шапка ******************** */
 
 .page-header {
-    border: 1px solid #ECECEC;
+    border: 1px solid var(--border-header-color);
 }
 
 .flex {
@@ -51,7 +64,7 @@ img {
 
 .logo {
     display: inline-block;
-    font-family: 'Raleway', sans-serif;
+    font-family:var(--second-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -68,7 +81,7 @@ img {
     align-items: center;
 }
 
-.nav-header > .logo {
+.nav-header>.logo {
     margin-right: 93px;
     padding: 24px 0;
 }
@@ -77,7 +90,7 @@ img {
     display: flex;
 }
 
-.flex > .contacts {
+.flex>.contacts {
     display: flex;
     margin-left: auto;
 }
@@ -125,6 +138,7 @@ img {
 .page-header .contact-item:not(:last-child) {
     margin-right: 50px;
 }
+
 .page {
     color: var(--accent-color);
 }
@@ -143,11 +157,11 @@ address {
     display: inline-block;
     font-size: 14px;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--adress-color);
 }
 
 .text {
-     color: var(--white-color); 
+    color: var(--white-color);
 }
 
 .address-item:not(:last-child) {
@@ -160,7 +174,7 @@ address {
 }
 
 .footer {
-    background: #2F303A;
+    background-color: var(--second-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -177,7 +191,7 @@ address {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: #2F303A;
+    background-color: var(--second-bg-color);
     text-align: center;
 }
 
@@ -206,6 +220,11 @@ address {
     padding: 10px 32px;
     border-radius: 4px;
     border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--second-accent-color);
 }
 
 .title,
@@ -287,7 +306,7 @@ address {
 .employees {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #F5F4FA;
+    background-color: var(--bg-color);
 }
 
 .employees-list {
@@ -302,9 +321,7 @@ address {
     /* border: 1px solid var(--text-color); */
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--team-shadow);
 }
 
 .employee-item:not(:last-child) {
@@ -349,7 +366,7 @@ address {
     font-size: 16px;
     line-height: 1.6;
     color: var(--titlt-color);
-    background-color: #F5F4FA;
+    background-color: var(--bg-color);
     border-radius: 4px;
     border: none;
 }
@@ -368,11 +385,12 @@ address {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-   
+
 }
+
 .work-item {
     width: 370px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--border-color);
 }
 
 .work-item:not(:nth-child(3n)) {
@@ -402,7 +420,8 @@ address {
     line-height: 1.9;
     color: var(--text-color)
 }
+
 .card-sub {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--border-color);
 }
