@@ -1,18 +1,23 @@
 :root {
+    /* font family */
     --main-font:'Roboto', sans-serif;
     --second-font:'Raleway', sans-serif;
+    /* text colors */
     --text-color: #757575;
     --titlt-color: #212121;
-    --accent-color: #2196F3;
-    --second-accent-color:#188CE8;
+    --adress-color: rgba(255, 255, 255, 0.6);
     --logo-dark-color: #000000;
     --white-color: #FFFFFF;
+    /* background colors */
     --main-bg-color:#FFFFFF;
     --second-bg-color:#2F303A;
     --bg-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --second-accent-color:#188CE8;
+    /* border colors */
     --border-color:#EEEEEE;
     --border-header-color:#ECECEC;
-    --adress-color: rgba(255, 255, 255, 0.6);
+    
     --team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -49,7 +54,26 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* 
+.features .title,
+.portfolio-title {
+    opacity: 0;
+    visibility: hidden;
+} */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* ***************** Шапка ******************** */
 
 .page-header {
@@ -141,6 +165,7 @@ img {
 
 .page {
     color: var(--accent-color);
+    /* border-bottom: 1px solid var(--accent-color); */
 }
 
 /* ***************** Футер ******************** */
@@ -227,6 +252,7 @@ address {
     background-color: var(--second-accent-color);
 }
 
+/*----------------Наша команда ------------*/
 .title,
 .feature-title {
     font-weight: 700;
@@ -245,27 +271,8 @@ address {
     margin-bottom: 10px;
 }
 
-/* 
-.features .title,
-.portfolio-title {
-    opacity: 0;
-    visibility: hidden;
-} */
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
+/* --------------- Наши преимущества ------------ */
 .features {
     margin: 0;
     padding-top: 94px;
@@ -290,7 +297,7 @@ address {
     font-size: 14px;
     line-height: 1.7;
 }
-
+/* ------------ Чем мы занимаемся ----------- */
 .services {
     padding-bottom: 94px;
 }
@@ -302,7 +309,7 @@ address {
 .service-item:not(:last-child) {
     margin-right: 30px;
 }
-
+/*----------------Наша команда ------------*/
 .employees {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -390,7 +397,7 @@ address {
 
 .work-item {
     width: 370px;
-    border: 1px solid var(--border-color);
+    /* border: 1px solid var(--border-color); */
 }
 
 .work-item:not(:nth-child(3n)) {
@@ -424,4 +431,10 @@ address {
 .card-sub {
     padding: 20px 24px;
     border: 1px solid var(--border-color);
+    border-top: none;
 }
+
+/* ******************** CVG ******************** */
+
+
+
