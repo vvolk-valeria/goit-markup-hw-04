@@ -12,16 +12,24 @@
     --main-bg-color:#FFFFFF;
     --second-bg-color:#2F303A;
     --bg-color: #F5F4FA;
+    --bg-hero-color: #C4C4C4;
     --accent-color: #2196F3;
     --second-accent-color:#188CE8;
     /* border colors */
     --border-color:#EEEEEE;
     --border-header-color:#ECECEC;
-    
+    /* shadows */
     --team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+    --filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 
 .list {
     list-style: none;
@@ -74,7 +82,9 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/* ***************** Шапка ******************** */
+/* ********************************************************************* 
+***************Шапка******************** 
+********************************************************************** */
 
 .page-header {
     border: 1px solid var(--border-header-color);
@@ -168,7 +178,9 @@ img {
     /* border-bottom: 1px solid var(--accent-color); */
 }
 
-/* ***************** Футер ******************** */
+/* ********************************************************************* 
+*************** Футер ******************** 
+********************************************************************** */
 
 .logo-white {
     color: var(--white-color);
@@ -210,16 +222,28 @@ address {
     margin-bottom: 20px;
 }
 
-/* ***************** WebStudio ******************** */
+/* ********************************************************************* 
+*************** WebStudio ******************** 
+********************************************************************** */
 
-
+/* ---------- Hero ---------------  */
 .hero {
+    
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/webstudio/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color:var(--bg-hero-color);
+    /* background-color: var(--second-bg-color); */
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--second-bg-color);
     text-align: center;
 }
-
 
 .hero-title {
     font-weight: 900;
@@ -252,7 +276,6 @@ address {
     background-color: var(--second-accent-color);
 }
 
-/*----------------Наша команда ------------*/
 .title,
 .feature-title {
     font-weight: 700;
@@ -267,16 +290,15 @@ address {
     text-align: center;
 }
 
-.feature-title {
-    margin-bottom: 10px;
-}
-
-
 /* --------------- Наши преимущества ------------ */
 .features {
     margin: 0;
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.feature-title {
+    margin-bottom: 10px;
 }
 
 .feature .feature-title {
@@ -353,7 +375,9 @@ address {
     padding: 30px 0;
 }
 
-/* ***************** Portfolio ******************** */
+/* ********************************************************************* 
+*************** Portfolio ******************** 
+********************************************************************** */
 
 .portfolio-section {
     padding: 94px 0;
@@ -386,6 +410,7 @@ address {
 .filter-btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: var(--filter-shadow);
 }
 
 .works {
@@ -398,6 +423,10 @@ address {
 .work-item {
     width: 370px;
     /* border: 1px solid var(--border-color); */
+}
+
+.work-item:hover {
+    box-shadow: var(--portfolio-card-shadow);
 }
 
 .work-item:not(:nth-child(3n)) {
@@ -435,6 +464,4 @@ address {
 }
 
 /* ******************** CVG ******************** */
-
-
 
