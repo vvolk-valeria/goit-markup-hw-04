@@ -300,7 +300,7 @@ address {
 .feature::before {
     content: "";
     display: block;
-    width: 270px;
+    /* width: 270px; */
     margin-bottom: 30px;
     height: 120px;
     outline: 1px solid blue;
