@@ -297,6 +297,37 @@ address {
     padding-bottom: 94px;
 }
 
+.feature::before {
+    content: "";
+    display: block;
+    width: 270px;
+    margin-bottom: 30px;
+    height: 120px;
+    outline: 1px solid blue;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bg-color);
+}
+
+
+.feature::before:nth-child(1) {
+background-image: url(../images/icons/icon-satellite.svg);
+}
+
+.feature::before:nth-child(2) {
+    background-image: url(../images/icons/icon-clock.svg);
+}
+
+.feature::before:nth-child(3) {
+    background-image: url(../images/icons/icon-diagram.svg);
+}
+
+.feature::before:nth-child(4) {
+    background-image: url(../images/icons/icon-astronaut.svg);
+}
+
 .feature-title {
     margin-bottom: 10px;
 }
@@ -374,6 +405,14 @@ address {
 .card-name {
     padding: 30px 0;
 }
+
+/* ------------ Постоянные клиенты ----------- */
+.clients {
+    padding-top: 75px;
+    padding-bottom: 94px;
+    background-color: var(--main-bg-color);
+}
+
 
 /* ********************************************************************* 
 *************** Portfolio ******************** 
