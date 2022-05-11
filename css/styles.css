@@ -329,24 +329,27 @@ margin-bottom: 20px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
+/* background-image: url(../images/icon/icon-satellite.svg); */
 }
 
+/* .exs  {
+     background-image: url(../images/icon/icon-satellite.svg);
+ } */
 
 .feature::before:nth-child(1) {
-background-image: url(../images/icons/icon-satellite.svg);
+background-image: url(../images/icon/icon-satellite.svg);
 }
 
 .feature::before:nth-child(2) {
-    background-image: url(../images/icons/icon-clock.svg);
+    background-image: url(../images/icon/icon-clock.svg);
 }
 
 .feature::before:nth-child(3) {
-    background-image: url(../images/icons/icon-diagram.svg);
+    background-image: url(../images/icon/icon-diagram.svg);
 }
 
 .feature::before:nth-child(4) {
-    background-image: url(../images/icons/icon-astronaut.svg);
+    background-image: url(../images/icon/icon-astronaut.svg);
 }
 
 .feature-title {
