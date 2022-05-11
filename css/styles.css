@@ -303,11 +303,11 @@ address {
     margin-bottom: 30px;
     height: 120px;
     outline: 1px solid blue;
-    
+    background-color: var(--bg-color);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--bg-color);
+   
 }
 
 
