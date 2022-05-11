@@ -464,7 +464,8 @@ background-image: url(../images/icons/icon-satellite.svg);
     /* border: 1px solid var(--border-color); */
 }
 
-.work-item:hover {
+.work-link:hover,
+.work-link:focus {
     box-shadow: var(--portfolio-card-shadow);
 }
 
