@@ -8,6 +8,7 @@
     --adress-color: rgba(255, 255, 255, 0.6);
     --logo-dark-color: #000000;
     --white-color: #FFFFFF;
+    --icon-color:#AFB1B8;
     /* background colors */
     --main-bg-color:#FFFFFF;
     --second-bg-color:#2F303A;
@@ -15,6 +16,7 @@
     --bg-hero-color: #C4C4C4;
     --accent-color: #2196F3;
     --second-accent-color:#188CE8;
+    --socials-bg-color: rgba(255, 255, 255, 0.1);
     /* border colors */
     --border-color:#EEEEEE;
     --border-header-color:#ECECEC;
@@ -28,6 +30,8 @@
     --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    
 }
 
 
@@ -151,7 +155,8 @@ img {
 }
 
 .contact {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -201,6 +206,15 @@ address {
     color: var(--white-color);
 }
 
+.socials {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+
 .address-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -220,6 +234,14 @@ address {
     display: inline-block;
     padding: 0;
     margin-bottom: 20px;
+}
+
+.footer > .container {
+     display: flex;
+     align-items: baseline;
+}
+.footer-block:not(:last-child) {
+   margin-right: 70px;
 }
 
 /* ********************************************************************* 
@@ -376,7 +398,6 @@ background-image: url(../images/icons/icon-satellite.svg);
 
 .employee-item {
     width: 270px;
-    height: 368px;
     background-color: var(--white-color);
     /* border: 1px solid var(--text-color); */
     border-bottom-left-radius: 4px;
@@ -400,10 +421,14 @@ background-image: url(../images/icons/icon-satellite.svg);
 .employee-vacancy {
     font-size: 16px;
     line-height: 1.2;
+    margin-bottom: 16px;
 }
 
 .card-name {
     padding: 30px 0;
+}
+.card-name > .socials-list{
+    justify-content: center;
 }
 
 /* ------------ Постоянные клиенты ----------- */
@@ -505,3 +530,70 @@ background-image: url(../images/icons/icon-satellite.svg);
 
 /* ******************** CVG ******************** */
 
+.contact-item svg {
+margin-right: 10px;
+align-items: baseline;
+/* justify-content: center; */
+/* align-items: center; */
+}
+
+.tel {
+width: 10px;
+height: 16px;
+}
+
+.mail {
+    width: 16px;
+    height: 12px;
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+
+}
+
+.client-item {
+margin-right: 30px;
+  
+}
+.client-item:last-child {
+    margin-right: 0;
+}
+
+.clients-list {
+    display: flex;
+  justify-content: center;  
+}
+.socials-list {
+display: flex;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: var(--socials-bg-color);
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-icon{
+    display: block;
+width: 20px;
+height: 20px;
+
+}
+
+
+ /* border: 1px solid var(--icon-color);
+      display: block;
+ color: var(--icon-color);
+ padding: 32px, 16px;
+    border-radius: 4px; */
