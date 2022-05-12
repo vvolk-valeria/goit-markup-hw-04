@@ -157,16 +157,19 @@ img {
 .contact {
     /* display: inline-block; */
     display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    fill: var(--icon-color);
 }
 
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .page-header .contact {
@@ -323,7 +326,9 @@ margin-bottom: 20px;
     content: "";
     display: block;
     margin-bottom: 30px;
-    height: 120px;
+    padding-right: 100px;
+    padding-top: 25px;
+    height: 70px;
     outline: 1px solid blue;
     background-color: var(--bg-color);
     background-size: contain;
@@ -332,23 +337,23 @@ margin-bottom: 20px;
 /* background-image: url(../images/icon/icon-satellite.svg); */
 }
 
-/* .exs  {
+/* .exs::before  {
      background-image: url(../images/icon/icon-satellite.svg);
  } */
 
-.feature::before:nth-child(1) {
+.feature:nth-child(1)::before {
 background-image: url(../images/icon/icon-satellite.svg);
 }
 
-.feature::before:nth-child(2) {
+.feature:nth-child(2)::before{
     background-image: url(../images/icon/icon-clock.svg);
 }
 
-.feature::before:nth-child(3) {
+.feature:nth-child(3)::before {
     background-image: url(../images/icon/icon-diagram.svg);
 }
 
-.feature::before:nth-child(4) {
+.feature:nth-child(4)::before {
     background-image: url(../images/icon/icon-astronaut.svg);
 }
 
@@ -439,6 +444,22 @@ background-image: url(../images/icon/icon-satellite.svg);
     padding-top: 75px;
     padding-bottom: 94px;
     background-color: var(--main-bg-color);
+}
+.client-link {
+     display: block;
+     width: 170px;
+     height: 92px;
+    padding: 32px, 16px;
+border: 1px solid var(--icon-color);
+border-radius: 4px;
+fill: var(--icon-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+   
 }
 
 
@@ -582,21 +603,33 @@ display: flex;
 
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: var(--accent-color);
-}
+/* .social-icon:hover,
+.social-icon:focus {
+    fill: var(--main-bg-color);
+} */
+
+
+
 
 .social-icon{
     display: block;
 width: 20px;
 height: 20px;
-
+fill: var(--icon-color);
 }
 
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--main-bg-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+        fill: var(--main-bg-color);
+    }
 
- /* border: 1px solid var(--icon-color);
-      display: block;
- color: var(--icon-color);
- padding: 32px, 16px;
-    border-radius: 4px; */
+.footer .social-icon {
+    fill: var(--main-bg-color);
+}
+
+/*  */
