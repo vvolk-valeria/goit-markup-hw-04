@@ -624,6 +624,8 @@ fill: var(--accent-color);
 
 .social-item {
     margin-right: 10px;
+    width: 44px;
+    height: 44px;
 }
 
 .social-item:last-child {
@@ -634,8 +636,8 @@ fill: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;  
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     background-color: var(--socials-bg-color);
     border-radius: 50%;
 }
